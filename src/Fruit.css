@@ -1,0 +1,37 @@
+p{
+    font-size: 16px;
+}
+
+h1, h3 {
+    margin: 20px auto;
+    color: olivedrab;
+}
+
+.fruit-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid powderblue;
+    width:100%;
+    margin: 30px auto;
+}
+.fruit-image{
+    width: 70px;
+}
+.fruit-name, .counter{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: deepskyblue;
+}
+.fruit-name{
+    width: 100px;
+}
+
+.count-button {
+    font-size: 20px;
+    background-color: deepskyblue;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border:none;
+}
