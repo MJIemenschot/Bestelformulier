@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
+import './Fruit.css';
 
 function Fruit (props) {
 
-    //console.log("Wat zit er in de props", props);
+    console.log(props)
+
 
     const [amount, setAmount] = useState(0);
 
     return (
         <div className="fruit-container">
-            {props.fruitname}
-            <button onClick={() => setAmount(amount + 1)}>+</button>
-            {amount}
-            <button onClick={() => setAmount(amount - 1)}>-</button>
+            <img className="fruit-image" src={props.image} alt={props.fruitname} />
+            <span className="fruit-name">{props.fruitname}</span>
+            <button className="count-button" onClick={() => setAmount(amount + 1)}>+</button>
+            <span className="counter"
+                  setAmount={setAmount}
+                  amount={amount}
+            >{amount}</span>
+            <button className="count-button" onClick={() => setAmount(amount - 1)}>-</button>
 
         </div>
     );
